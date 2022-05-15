@@ -32,7 +32,7 @@ const AdminAppLogin = () => {
     // }
 
     Axios
-      .post('http://localhost:4000/api/admin/user/login', {
+      .post('https://aquib-rental.herokuapp.com/api/admin/user/login', {
         "email" : uname.value,
         "password": pass.value
     })

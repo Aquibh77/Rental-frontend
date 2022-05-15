@@ -10,7 +10,7 @@ function AdminApp() {
 
   useEffect(() => {
     Axios
-      .get('http://localhost:4000/api/admin/product')
+      .get('https://aquib-rental.herokuapp.com/api/admin/product')
       .then((response) => {
         setData(response.data)
         setIsLoading(false)
@@ -66,7 +66,7 @@ function NavBar(props) {
     var { id, name, duration, cost, category, url } = document.forms[0];
 
     Axios
-      .post('http://localhost:4000/api/admin/product', {
+      .post('https://aquib-rental.herokuapp.com/api/admin/product', {
             "id": id,
             "name": name,
             "duration": duration,

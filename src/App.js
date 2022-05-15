@@ -58,7 +58,7 @@ function UserApp() {
 
   useEffect(() => {
     Axios
-      .get('http://localhost:4000/api/user/product')
+      .get('https://aquib-rental.herokuapp.com/api/user/product')
       .then((response) => {
         let categoryList =response.data.map(item => item.category)
         setData(response.data)
